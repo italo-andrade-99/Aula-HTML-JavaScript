@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dragon Ball</title>
+</head>
+<body>
+    <h2>Calcular Força do KI</h2>
+        Digite o nome do guerreiro:<input id="nome"> <br>
+        Digite a força de seu KI: <input id="ki"> <br>
+    <button onclick="Calcular()">Ver ki em cada forma</button>
+</body>
+</html>
+
+<script>
+    function Calcular()
+    {
+        alert(`O ki do guerreiro ${nome.value} em forma normal é ${ki.value}!`);
+
+        alert(`O ki do guerreiro ${nome.value} em forma Super Sayajin é ${ki.value*50}!`);
+
+        alert(`O ki do guerreiro ${nome.value} em forma Super Sayajin2 é ${ki.value*100}!`);
+    }
+</script>

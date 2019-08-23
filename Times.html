@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titulo Mundiais</title>
+</head>
+<body>
+    <h2>Mundiais</h2>
+        Digite nome do seu time:<input type="text" id="time"> <br>
+        DIgite a quantia de mundiais: <input type="int" id="mundial"> <br>
+    <button onclick="Coletar()">Clique Aqui</button>
+</body>
+</html>
+
+<script>
+    function Coletar()
+    {
+        var time1 = time.value;
+        var mundial1 = mundial.value;
+        if(time1 == 'palmeiras' || time1 == 'Palmeiras'){
+            alert('Troféu Cachaça não conta :/');
+        }
+        else{
+            alert(`O time ${time1} tem ${mundial1} mundiais da FIFA`);
+        }
+        
+    }
+</script>

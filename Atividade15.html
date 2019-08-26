@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cofrinho</title>
+</head>
+<body>
+    <h2>Cofrinho</h2>
+    Digite quantas moedas Huguinho depositou: <input type="text" id="moeda1"> <br>
+    Digite quantas moedas Zezinho depositou: <input type="text" id="moeda2"> <br>
+    Digite quantas moedas Luizinho depositpu: <input type="text" id="moeda3"> <br>
+    <button onclick="calcular()">Clique Aqui</button>
+</body>
+</html>
+
+<script>
+    function calcular(){
+    alert(`Huguinho Economizou R$${moeda1.value*0.50} pois fez ${moeda1.value} depositos!`);
+
+    alert(`Zezinho Economizou R$${moeda2.value*0.50} pois fez ${moeda2.value} depositos!`);
+
+    alert(`Luizinho Economizou R$${moeda3.value*0.50} pois fez ${moeda3.value} depositos!`);
+    }
+</script>

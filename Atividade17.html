@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cachorro</title>
+</head>
+<body>
+    Digite seu bairro: <input type="text" id="bairro"> <br>
+    Digite o numero de cachorros: <input type="text" id="dogs">
+
+    <button onclick="alou()">Clique aqui</button>
+
+    <div id="div_dogs" style="color:red"></div>
+</body>
+</html>
+
+<script>
+    function alou(){
+        div_dogs.innerHTML = `Você mora em ${bairro.valur} e tem ${dogs.value} cachorros`;
+    }
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bilhete Unico</title>
+</head>
+<body>
+    <h2>Bilhete Unico</h2>
+        Digite o Valor do passe:<input id="valor_passe"> <br>
+        Quantas viagens fará no mês: <input id="viagens"> <br>
+    <button onclick="Calcular()">Ver Economia</button>
+</body>
+</html>
+
+<script>
+    function Calcular()
+    {
+        var economia = (valor_passe.value * viagens.value)/2;
+        alert(`Você irá economizar R$${economia.toFixed(2)} por mês!`);
+    }
+</script>

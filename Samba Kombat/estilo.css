@@ -1,0 +1,35 @@
+.thiaguinho{
+    width: 300px;
+    height: 430px;
+}
+.pericles{
+    width: 300px;
+    height: 430px;
+}
+
+.divthiaguinho{
+    margin-left: 1000px;
+}
+
+.divpericles{
+    position: fixed;
+}
+
+.hppericles{
+    background-color: green;
+    width: 350px; 
+    height: 20px;
+}
+
+.hpthiaguinho{
+    background-color: green;
+    width: 350px; 
+    height: 20px;
+}
+
+.apanhar{
+    width: 100px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 10px;
+}

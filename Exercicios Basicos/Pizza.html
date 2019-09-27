@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <h2>pizza</h2>
+        Digite quantidade de amigos:<input type="int" id="amigos"> <br>
+        Digite o valor da pizza: <input id="pizza"> <br>
+    <button onclick="Calcular()">#lovePizza</button>
+</body>
+</html>
+
+<script>
+    function Calcular()
+    {
+        var amigos1 = amigos.value;
+        var pizza1 = pizza.value;
+        
+        alert(`Cada um dos ${amigos1} vai pagar R$ ${(pizza1/amigos1).toFixed(2)}`);
+    }
+</script>

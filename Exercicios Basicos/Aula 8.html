@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 8</title>
+</head>
+<body>
+    Informe seu nome: <input type="text" id="nome"> <br>
+    Informe sua cidade Nata: <input type="text" id="cidade_natal"> <br>
+
+    <button onclick="magica()">Faça Magia</button>
+
+    <div id="div_mensagem" style="color:blue"></div>
+</body>
+</html>
+
+<script>
+    function magica(){
+        div_mensagem.innerHTML = `Você é o ${nome.value} e nasceu em ${cidade_natal.value}`;
+    }
+</script>

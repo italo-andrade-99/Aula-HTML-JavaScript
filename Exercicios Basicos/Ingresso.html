@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valor Ingresso</title>
+</head>
+<body>
+    <h2>Ingressos</h2>
+        Digite quantos ingressos de estudante:<input id="valor_estudante"> <br>
+        Digite quantos ingressos comuns vendidos: <input id="valor_comum"> <br>
+        Digite valor do ingresso: <input id="valor_ingresso"> <br>
+    <button onclick="Calcular()">Calcular</button>
+</body>
+</html>
+
+<script>
+    function Calcular()
+    {
+        var valor_estudante1 = (valor_ingresso.value*valor_estudante.value)/2;
+        var valor_comum1 = valor_comum.value*valor_ingresso.value;
+        
+        alert (`A arrecadação foi de R$${valor_comum1+valor_estudante1.toFixed(2)}`);
+    }
+</script>

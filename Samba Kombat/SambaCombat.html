@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Samba Kombat</title>
+</head>
+<body>
+    <div>
+        <h1 style="width: 100%; text-align: center">Samba Kombat</h1>
+        <div class="divpericles">
+            
+            <img id="periclesmorto"class="pericles" src="PERICLES.jpg" alt="">
+            <div id="vidapericles" class="hppericles"></div>
+            <button id="apanharPericles"class="apanhar" onclick="bater_pericles()">Apanhar</button>
+            <label id="vencedorPericles"id="vencedorPericles"style="display: none">Pericles Venceu!</label>
+        </div>
+
+        <div class="divthiaguinho">
+            <img id="thiaguinhomorto"class="thiaguinho" src="Thiaguinho.jpg" alt="">
+            <div id="vidathiaguinho"class="hpthiaguinho"></div>
+            <button id="apanharThiaguinho" class="apanhar" onclick="bater_thiaguinho()">Apanhar</button> 
+            <label id="vencedorThiaguinho" style="display: none">Thiaguinho Venceu!</label>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+var perderHP = 25;
+
+var hpTotalPericles = 350;
+var calculoPericles = 0;
+
+var hpTotalThiaguinho = 350;
+var calculoThiaguinho = 0;
+
+    function bater_pericles(){
+        calculoPericles = hpTotalPericles - perderHP;
+        vidapericles.style.width = `${calculoPericles}px`;
+        hpTotalPericles = calculoPericles;
+
+        if(calculoPericles < 250){
+            vidapericles.style.backgroundColor = 'orange';
+        }
+        if(calculoPericles < 100){
+            vidapericles.style.backgroundColor = 'red';
+        }
+
+        if(calculoPericles <= 0){
+            periclesmorto.src = 'https://curiosidadesnanet.files.wordpress.com/2008/06/328.jpg?w=455';
+            vencedorPericles.style.display = 'block';
+            apanharPericles.style.display = 'none';
+            apanharThiaguinho.style.display = 'none';
+
+            periclesmorto.style = 'width: 350px';
+        }
+    }
+
+    function bater_thiaguinho(){
+        calculoThiaguinho = hpTotalThiaguinho - perderHP;
+        vidathiaguinho.style.width = `${calculoThiaguinho}px`;
+        hpTotalThiaguinho = calculoThiaguinho;
+        
+        if(calculoThiaguinho < 250){
+            vidathiaguinho.style.backgroundColor = 'orange';
+        }
+        if(calculoThiaguinho < 100){
+            vidathiaguinho.style.backgroundColor = 'red';
+        }
+
+        if(calculoThiaguinho <= 0){
+            thiaguinhomorto.src = 'http://varelanoticias.com.br/wp-content/uploads/2018/03/caixao.jpg';
+            vencedorThiaguinho.style.display = 'block';
+            apanharThiaguinho.style.display = 'none';
+            apanharPericles.style.display = 'none';
+        }
+    }
+</script>

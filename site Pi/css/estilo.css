@@ -17,6 +17,22 @@ body{
     background-size: cover;
 }
 
+/*Barra de navegação*/
+
+.navegacao{
+    position: fixed;
+    background-color: #00000091;
+    width: 100%;
+    height: 5vw;
+    
+}
+
+.navegacao h2{
+    text-align: center;
+    color: cyan;
+    font-size: 80px;
+}
+
 /* Toda a configuração de Login*/
 
 .Login{
@@ -28,6 +44,7 @@ body{
     width: 300px;
     float: right;
     border:solid;
+    left: 80%;
     border-color: gold;
 }
 
@@ -55,7 +72,7 @@ body{
 /* Toda a Configuração de Cadastro*/
 
 .Cadastro{
-    margin-top: 300px;
+    margin-top: 230px;
     padding: 30px;
     width: 300px;
     background-color: darkblue;

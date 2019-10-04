@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.imagem{
+    background-image: url("../imagens/fundo.jpg");
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Toda a configuração de Login*/
+
+.Login{
+    text-align: center;
+    margin-top: 350px;
+    margin-right: 200px;
+    background-color: darkblue;
+    padding: 30px;
+    width: 300px;
+    float: right;
+    border:solid;
+    border-color: gold;
+}
+
+.Login input{
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px; 
+    font-size: 35px;
+}
+
+.Login button{
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 35px; 
+}
+
+.Login h2{
+    color:darkturquoise;
+    font-size: 50px;
+}
+
+/* Toda a Configuração de Cadastro*/
+
+.Cadastro{
+    margin-top: 300px;
+    padding: 30px;
+    width: 300px;
+    background-color: darkblue;
+    border:solid;
+    border-color: gold;
+    margin-left: 200px;
+    float: left;
+}
+
+.Cadastro h2{
+    color:darkturquoise;
+    font-size: 50px;
+}
+
+.Cadastro input{
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px; 
+    font-size: 35px;
+}
+
+.Cadastro button{
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 35px; 
+}

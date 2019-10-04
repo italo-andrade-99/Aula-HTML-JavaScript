@@ -11,15 +11,15 @@
     <div class="imagem">
 
         <div class="navegacao">
-            <h2>Agaragan Viagens</h2>
+            <h2>Agaragun Viagens</h2>
         </div>
 
         <!--Div de Login-->
         <div class="Login">
              <h2>Login</h2>
-             <input type="text" placeholder="Insira seu Login:">
-             <input type="password" placeholder="Insira sua Senha:">
-            <button>Entrar</button>
+             <input type="text" placeholder="Insira seu Login:" id="login">
+             <input type="password" placeholder="Insira sua Senha:" id="senha">
+            <button onclick="logar()">Entrar</button>
         </div>
 
         <!--Div de Cadastro-->
@@ -37,3 +37,18 @@
 
 </body>
 </html>
+
+<script>
+    function logar(){
+
+        var login_entrar = login.value;
+        var senha_entrar = senha.value;
+
+        if(login_entrar == "italo" && senha_entrar == "123"){
+            alert('Olá Italo! :)');
+        }
+        else{
+            alert('Usuario invalido!');
+        }
+    }
+</script>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/estilo.css">
+
     <title>Cadastro</title>
 </head>
 <body>
@@ -25,13 +26,13 @@
         <!--Div de Cadastro-->
         <div class="Cadastro">
             <h2>Cadastre-se</h2>
-            <input type="text" placeholder="Nome Completo:">
-            <input type="text" placeholder="E-mail: ">
-            <input type="text" placeholder="CPF:">
-            <input type="text" placeholder="Login: ">
-            <input type="password" placeholder="Senha: ">
-            <input type="password" placeholder="Confirmação: ">
-            <button>Cadastrar</button>
+            <input type="text" placeholder="Nome Completo:" id="nome">
+            <input type="text" placeholder="E-mail: " id="email">
+            <input type="text" placeholder="CPF:" id="cpf">
+            <input type="text" placeholder="Login: " id="cad_login">
+            <input type="password" placeholder="Senha: " id="cad_senha">
+            <input type="password" placeholder="Confirmação: " id="confirmacao">
+            <button onclick="cadastrar()">Cadastrar</button>
         </div>
     </div>
 
@@ -49,6 +50,21 @@
         }
         else{
             alert('Usuario invalido!');
+        }
+    }
+
+    function cadastrar(){
+
+        if(nome.value == '' || email.value == '' ||cpf.value == '' ||cad_login.value == '' ||cad_senha.value == '' ||confirmacao.value == '' ){
+            alert('Um dos campos está vazio! :(');
+            alert('Verifique se tudo esta preenchido corretamente e tente novamente!');
+        }
+        else if(cad_senha.value == confirmacao.value){
+            alert('Cadastro feito com sucesso!');
+        }
+        else{
+            alert('As senhas não estão iguais!');
+            alert('Verifique se tudo esta preenchido corretamente e tente novamente!');
         }
     }
 </script>

@@ -28,7 +28,7 @@ body{
 
 .navegacao h2{
     text-align: center;
-    color: cyan;
+    color: #6495ED;
     font-size: 4vw;
 }
 
@@ -36,15 +36,15 @@ body{
 
 .Login{
     text-align: center;
-    margin-top: 17vw;
+    margin-top: 13vw;
     margin-right: 12vw;
-    background-color: darkblue;
+    background-color: #6495ED;
     padding: 3vw;
     width: 17vw;
     float: right;
     border:solid;
     left: 80%;
-    border-color: gold;
+    border-color: #7FFF00;
 }
 
 .Login input{
@@ -53,6 +53,8 @@ body{
     height: 2.4vw;
     border-radius: 1vw; 
     font-size: 2vw;
+    border-color: black;
+    border-width: 5px; 
 }
 
 .Login button{
@@ -61,28 +63,31 @@ body{
     height: 2.4vw;
     border-radius: 1vw;
     font-size: 2vw; 
+    border-color: black;
+    border-width: 5px;
 }
 
 .Login h2{
-    color:darkturquoise;
+    color:black;
     font-size: 3vw;
 }
 
 /* Toda a Configuração de Cadastro*/
 
 .Cadastro{
-    margin-top: 10vw;
+    margin-top: 8vw;
     padding: 3vw;
     width: 17vw;
-    background-color: darkblue;
+    height: 63vh;
+    background-color: #6495ED;
     border:solid;
-    border-color: gold;
+    border-color: #7FFF00;
     margin-left: 12vw;
     float: left;
 }
 
 .Cadastro h2{
-    color:darkturquoise;
+    color:black;
     font-size: 3vw;
 }
 
@@ -92,6 +97,8 @@ body{
     height: 2.4vw;
     border-radius: 1vw; 
     font-size: 2vw;
+    border-color: black;
+    border-width: 5px;
 }
 
 .Cadastro button{
@@ -99,5 +106,7 @@ body{
     width: 16vw;
     height: 2.4vw;
     border-radius: 1vw;
-    font-size: 2vw; 
+    font-size: 2vw;
+    border-color: black;
+    border-width: 5px; 
 }

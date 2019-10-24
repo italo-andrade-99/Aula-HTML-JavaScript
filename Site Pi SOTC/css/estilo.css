@@ -22,18 +22,16 @@
     margin-top: -20px;
     height: 100px;
 }
-.nav_colosso{
-    float: left;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-left: 200px;
-    font-style: oblique;
-    font-weight: bold;  
-}
-.nav_spoiller{
-    float: right;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-right: 200px;
-    font-style: oblique;
+
+.introducao_do_jogo {
+    width: 400px;
+    border-color: black;
+    border: solid;
+    position: absolute;
+    padding: 1px;
+    margin: 0px;
+    font-size: 20px; 
+    margin-top: 100px;
+    background-color: #B25722;
+    margin-left: 20px;
 }

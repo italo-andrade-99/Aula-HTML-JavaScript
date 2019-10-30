@@ -28,12 +28,25 @@ body{
 
 .navegacao h3{
     /*text-align: center;*/
-    color: rgba(100, 148, 237, 0.5);
+    color: aqua;
     font-size: 3vw;
+    margin-top: 10px;
 }
  
-.navegacao a{
+.navegacao li{
+    position: relative;
+    float: left;
+    left: 50%;
+    margin-left: 150px;
+    margin-top: -33px;
+}
 
+.navegacao a {
+    
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    color: aqua;
 }
 
 .navegacao img{
@@ -116,16 +129,29 @@ body{
     text-align: center; 
 }
 
-.voador{
+.voador_direita{
     position: absolute;
     width: 100px;
-    animation: aviao 3s infinite;
+    animation: aviao_voando_direita 5s infinite;
 }
 
-@keyframes aviao{
-    /* 0% {left: 0px; top: 0px;}
-    100%{left: 300px; top: 900px;} */
-    0% {left: 0px; top: 0px;}
+.voando_esquerda{
+
+    transform: rotate(270deg);
+    position: absolute;
+    width: 100px;
+    animation: aviao_voando_esquerda 5s infinite;
+}
+
+@keyframes aviao_voando_direita{
+    0% {left: 0%; top: 650px;}
+    100%{left: 100%; top: 0px;} 
+    /* 0% {left: 250px; top: 0px;}
     50%{left: 300px; top: 900px;}
-    100%{left: 100%; top: 0px;}
+    100%{left: 100%; top: 0px;} */
+}
+
+@keyframes aviao_voando_esquerda{
+    0% {left: 100%; top: 650px;}
+    100%{left: -100px; top: 0%;} 
 }

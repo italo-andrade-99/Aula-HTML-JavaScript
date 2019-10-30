@@ -28,9 +28,12 @@ body{
 
 .navegacao h3{
     /*text-align: center;*/
-    color: #6495ED;
+    color: rgba(100, 148, 237, 0.5);
     font-size: 3vw;
-    
+}
+ 
+.navegacao a{
+
 }
 
 .navegacao img{
@@ -43,13 +46,14 @@ body{
 .Login{
     text-align: center;
     margin-top: 11vw;
-    background-color: #87CEEB;
+    background-color: rgba(135, 207, 235, 0.466);
     padding: 3vw;
     width: 17vw;
     border:solid;
     left: 39%;
-    border-color: white;
-    position: relative; 
+    border-color: rgba(255, 255, 255, 0.562);
+    position: relative;
+    border-radius: 7%; 
 }
 
 .Login input{
@@ -110,4 +114,18 @@ body{
     border-bottom: 3px solid white;
     background: transparent;
     text-align: center; 
+}
+
+.voador{
+    position: absolute;
+    width: 100px;
+    animation: aviao 3s infinite;
+}
+
+@keyframes aviao{
+    /* 0% {left: 0px; top: 0px;}
+    100%{left: 300px; top: 900px;} */
+    0% {left: 0px; top: 0px;}
+    50%{left: 300px; top: 900px;}
+    100%{left: 100%; top: 0px;}
 }

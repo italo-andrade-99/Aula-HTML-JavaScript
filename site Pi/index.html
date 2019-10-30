@@ -22,21 +22,12 @@
              <h2>Login</h2>
              <input type="text" placeholder="Insira seu Login:" id="login">
              <input type="password" placeholder="Insira sua Senha:" id="senha">
-            <button onclick="logar()">Entrar</button>
+             <a href="">Esqueceu a senha?</a>
+                <div class="nuvem">
+                   <a href=""> <img src="./imagens/botao_nuvem_entrar.png" title="Entrar"> </a>
+                </div>
         </div>
 
-        <!--Div de Cadastro-->
-        <div class="Cadastro">
-            <h2>Cadastre-se</h2>
-            <input type="text" placeholder="Nome Completo:" id="nome">
-            <input type="text" placeholder="E-mail: " id="email">
-            <input type="text" placeholder="CPF:" id="cpf">
-            <input type="text" placeholder="Login: " id="cad_login">
-            <input type="password" placeholder="Senha: " id="cad_senha">
-            <input type="password" placeholder="Confirmação: " id="confirmacao">
-            <button onclick="cadastrar()">Cadastrar</button>
-        </div>
-    </div>
 
 </body>
 </html>
@@ -53,6 +44,8 @@
         }
         else{
             alert('Usuario invalido!');
+            login.innerHTML = "";
+            senha.innerHTML = "";
         }
     }
 

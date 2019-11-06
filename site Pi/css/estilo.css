@@ -96,6 +96,10 @@ body{
     font-size: 3vw;
 }
 
+.Login a {
+    text-decoration: none;
+}
+
 .nuvem {
     text-align: center;
     margin-bottom: 2px;
@@ -132,23 +136,20 @@ body{
 .voador_direita{
     position: absolute;
     width: 100px;
-    animation: aviao_voando_direita 5s infinite;
+    animation: aviao_voando_direita 10s infinite;
 }
 
 .voando_esquerda{
 
-    transform: rotate(270deg);
+    transform: rotate(360deg);
     position: absolute;
     width: 100px;
-    animation: aviao_voando_esquerda 5s infinite;
+    animation: aviao_voando_esquerda 18s infinite;
 }
 
 @keyframes aviao_voando_direita{
     0% {left: 0%; top: 650px;}
-    100%{left: 100%; top: 0px;} 
-    /* 0% {left: 250px; top: 0px;}
-    50%{left: 300px; top: 900px;}
-    100%{left: 100%; top: 0px;} */
+    100%{left: 100%; top: 0px;}
 }
 
 @keyframes aviao_voando_esquerda{

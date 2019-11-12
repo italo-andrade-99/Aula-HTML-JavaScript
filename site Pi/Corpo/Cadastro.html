@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../Js/logica.js"></script>
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -11,20 +12,25 @@
     <div class="imagem">
 
         
-        <div class="navegacao">
+        <div class="navegacao"> 
             <img src="../imagens/icone.png" alt="">
             <h3>BlueFox Viagens</h3>
+            <ul>
+                <a href="./Cadastro.html"><li>Cadastrar</li></a>
+                <a href="../index.html"><li>Logar</li></a>
+            </ul>
         </div>
     <div class="cadastro_usuario">
+        <h2>Cadastre-se</h2>
         <input placeholder="Nome Completo:" id="nome">
         <input placeholder="Usuario:" id="cad_login">
         <input placeholder="E-mail:" id="email">
         <input type="password" placeholder="Confirmação E-mail:" id="cad_senha">
         <input type="password" placeholder="Senha:">
         <input placeholder="Confirmação Senha:" id="cad_senha">
-        <button onclick="cadastrar()">Cadastrar</button>
+        <div class="nuvem">
+        <img onclick="cadastrar()" src="../imagens/Nuvem_Cadastrar.png" title="Entrar"> </a>
+    </div>
     </div>
 </body>
 </html>
-
-<script src="../Js/logica.js"></script>

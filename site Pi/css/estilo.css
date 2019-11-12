@@ -109,14 +109,15 @@ body{
 
 .cadastro_usuario{
     text-align: center;
-    margin-top: 11vw;
-    background-color: #87CEEB;
+    margin-top: 8vw;
+    background-color: rgba(135, 207, 235, 0.466);
     padding: 3vw;
     width: 17vw;
     border:solid;
     left: 39%;
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.562);
     position: relative;
+    border-radius: 7%; 
 }
 
 .cadastro_usuario input{
@@ -133,6 +134,11 @@ body{
     text-align: center; 
 }
 
+.Cadastro_usuario h2{
+    color:black;
+    font-size: 3px;
+}
+
 .voador_direita{
     position: absolute;
     width: 100px;
@@ -145,6 +151,13 @@ body{
     position: absolute;
     width: 100px;
     animation: aviao_voando_esquerda 18s infinite;
+}
+
+.cadastro_usuario img{
+    margin-top: 1vw;
+    width: 15vw;
+    height: 6vw;
+    background-image: url(../imagens/botao_nuvem.png);
 }
 
 @keyframes aviao_voando_direita{
